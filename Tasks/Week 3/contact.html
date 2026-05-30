@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Us</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <section class="container header-container">
+      <img src="./assets/Gemini_Generated_Image_qalptgqalptgqalp.png" alt="Logo" class="logo">
+      <nav class="nav-menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="product.html">Products</a></li>
+          <li><a href="#">Deals</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+      <form class="search-form" onsubmit="return false;">
+        <input type="search" placeholder="Search for products">
+      </form>
+    </section>
+  </header>
+
+  <main>
+    <section class="container contact-section fade-in">
+      <h1>Contact Us</h1>
+      <p>We’d love to hear from you! Fill out the form below and our team will get back to you within 24 hours.</p>
+      <form class="contact-form" autocomplete="off">
+        <div class="form-row">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-row">
+          <label for="email">Email </label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-row">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+      <section class="contact-info">
+        <h2>Other ways to get in touch</h2>
+        <ul>
+          <li><b>Email:</b> support@example.com</li>
+          <li><b>Phone:</b> +92 301 0000000</li>
+          <li><b>Address:</b> 123 Market Road, Karachi, Pakistan</li>
+        </ul>
+      </section>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <section class="container footer-container">
+      <section class="footer-branding">
+        <p>&copy; 2026 Ecommerce. All rights reserved.</p>
+      </section>
+      <section class="footer-links">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+        <a href="#">Support</a>
+      </section>
+    </section>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

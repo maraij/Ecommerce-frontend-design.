@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Product Listing</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <section class="container header-container">
+      <img src="./assets/Gemini_Generated_Image_qalptgqalptgqalp.png" alt="Logo" class="logo">
+      <nav class="nav-menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html" class="active">Products</a></li>
+          <li><a href="#">Deals</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <form class="search-form" onsubmit="return false;">
+        <input type="search" placeholder="Search for products">
+      </form>
+    </section>
+  </header>
+
+  <main class="product-page-main">
+    <h2>All Products</h2>
+    <section class="products-grid">
+      <!-- Repeatable product card example -->
+      <section class="product-card fade-in">
+        <img src="./assets/iphone-14-pro-finish-select-202209-6-1inch-spaceblack.webp" alt="iPhone 14">
+        <span class="prod-name">iPhone 14</span>
+        <span class="prod-price">$999</span>
+        <a href="product-details.html#iphone" class="buy-btn">View Details</a>
+      </section>
+
+      <section class="product-card fade-in">
+        <img src="./assets/image 86.png" alt="Headphones">
+        <span class="prod-name">Sony Headphones</span>
+        <span class="prod-price">$149</span>
+        <a href="product-details.html#headphones" class="buy-btn">View Details</a>
+      </section>
+
+      <section class="product-card fade-in">
+        <img src="./assets/8.png" alt="Smart Watch">
+        <span class="prod-name">Smart Watch</span>
+        <span class="prod-price">$199</span>
+        <a href="product-details.html#watch" class="buy-btn">View Details</a>
+      </section>
+
+      <section class="product-card fade-in">
+        <img src="./assets/trendy_shoes_men_best_jogger_shoes_by_calza.webp" alt="Shoes">
+        <span class="prod-name">Running Shoes</span>
+        <span class="prod-price">$89</span>
+        <a href="product-details.html#shoes" class="buy-btn">View Details</a>
+      </section>
+
+      <section class="product-card fade-in">
+        <img src="./assets/laptop.avif" alt="Laptop">
+        <span class="prod-name">Gaming Laptop</span>
+        <span class="prod-price">$1299</span>
+        <a href="product-details.html#laptop" class="buy-btn">View Details</a>
+      </section>
+
+      <section class="product-card fade-in">
+        <img src="./assets/1_4fbe31c2-5e99-4ab8-bdc7-bb7a2bb0ded8.webp" alt="Backpack">
+        <span class="prod-name">Travel Backpack</span>
+        <span class="prod-price">$59</span>
+        <a href="product-details.html#backpack" class="buy-btn">View Details</a>
+      </section>
+    </section>
+    <section class="pagination">
+      <button class="load-more">Load More</button>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <section class="container footer-container">
+      <section class="footer-branding">
+        <p>&copy; 2026 Ecommerce. All rights reserved.</p>
+      </section>
+      <section class="footer-links">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+        <a href="#">Support</a>
+      </section>
+    </section>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,325 @@
+/* Modern Reset and Variable Definitions */
+:root {
+    --primary-color: #4f46e5;       /* Premium Indigo Blue */
+    --primary-hover: #4338ca;       /* Darker Indigo */
+    --bg-light: #f8f9fa;            /* Soft Light Background */
+    --text-main: #1f2937;           /* Deep Charcoal for high readability */
+    --text-muted: #4b5563;          /* Soft Gray for secondary text */
+    --border-color: #e5e7eb;        /* Light Border Line */
+    --white: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', Arial, sans-serif;
+    background-color: var(--bg-light);
+    color: var(--text-main);
+    line-height: 1.6;
+}
+
+/* Upgraded Elegant Header */
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 5%;
+    background-color: var(--white);
+    border-bottom: 1px solid var(--border-color);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.02);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.brand-logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    gap: 10px;
+}
+
+.logo {
+    height: 40px;
+    object-fit: contain;
+}
+
+.logo-text {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--text-main);
+}
+
+.logo-text span {
+    color: var(--primary-color);
+}
+
+/* Modern Centered Search Bar Setup */
+.search-section {
+    flex: 0 1 450px;
+    margin: 0 20px;
+}
+
+.search-form {
+    display: flex;
+    background: var(--bg-light);
+    border: 1px solid var(--border-color);
+    border-radius: 30px;
+    padding: 4px 6px;
+    transition: all 0.3s ease;
+}
+
+.search-form:focus-within {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1);
+    background: var(--white);
+}
+
+.search-form input[type="search"] {
+    width: 100%;
+    padding: 8px 16px;
+    border: none;
+    background: transparent;
+    font-size: 15px;
+    outline: none;
+    color: var(--text-main);
+}
+
+.search-btn {
+    background-color: var(--primary-color);
+    color: var(--white);
+    border: none;
+    padding: 8px 18px;
+    border-radius: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.search-btn:hover {
+    background-color: var(--primary-hover);
+}
+
+/* Clean Nav Menu Navigation */
+.nav-menu ul {
+    display: flex;
+    list-style: none;
+    gap: 32px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: var(--text-muted);
+    font-size: 16px;
+    font-weight: 500;
+    position: relative;
+    padding: 6px 0;
+    transition: color 0.3s ease;
+}
+
+.nav-menu a:hover, .nav-menu a.active {
+    color: var(--primary-color);
+}
+
+/* Animated active/hover line */
+.nav-menu a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--primary-color);
+    transition: width 0.3s ease;
+}
+
+.nav-menu a:hover::after, .nav-menu a.active::after {
+    width: 100%;
+}
+
+/* Layout Main Container & Hero Section */
+.main-container {
+    min-height: 60vh;
+}
+
+.hero-section {
+    text-align: center;
+    padding: 100px 20px;
+    max-width: 800px;
+    margin: 40px auto;
+    background: var(--white);
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
+    border: 1px solid var(--border-color);
+}
+
+.hero-section h1 {
+    font-size: 46px;
+    font-weight: 700;
+    color: var(--text-main);
+    margin-bottom: 20px;
+    letter-spacing: -0.5px;
+}
+
+.hero-section p {
+    font-size: 18px;
+    color: var(--text-muted);
+    margin-bottom: 32px;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: var(--white);
+    text-decoration: none;
+    padding: 12px 32px;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.cta-button:hover {
+    background-color: var(--primary-hover);
+    transform: translateY(-1px);
+}
+
+/* Multi-Column Professional Footer structure */
+.site-footer {
+    background-color: #111827; /* Very premium dark slate gray */
+    color: #f3f4f6;
+    padding: 60px 5% 30px 5%;
+    margin-top: 100px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1.5fr;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    border-bottom: 1px solid #374151;
+    padding-bottom: 40px;
+}
+
+.footer-column h3 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    color: var(--white);
+}
+
+.footer-column h3 span {
+    color: #818cf8;
+}
+
+.footer-column h4 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: var(--white);
+}
+
+.footer-column p {
+    color: #9ca3af;
+    font-size: 15px;
+    margin-bottom: 16px;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footer-links a {
+    color: #9ca3af;
+    text-decoration: none;
+    font-size: 15px;
+    transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+    color: #818cf8;
+}
+
+/* Modern Footer Newsletter subscription fields */
+.footer-subscribe {
+    display: flex;
+    gap: 8px;
+}
+
+.footer-subscribe input[type="email"] {
+    background-color: #1f2937;
+    border: 1px solid #374151;
+    padding: 10px 16px;
+    border-radius: 6px;
+    color: var(--white);
+    outline: none;
+    font-size: 14px;
+    flex: 1;
+}
+
+.footer-subscribe button {
+    background-color: var(--primary-color);
+    color: var(--white);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.footer-subscribe button:hover {
+    background-color: var(--primary-hover);
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 30px;
+    font-size: 14px;
+    color: #6b7280;
+}
+
+/* Full Responsive Fluid Design */
+@media (max-width: 992px) {
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    .newsletter-col {
+        grid-column: span 2;
+    }
+}
+
+@media (max-width: 768px) {
+    .site-header {
+        flex-direction: column;
+        gap: 16px;
+        padding: 20px;
+    }
+
+    .search-section {
+        width: 100%;
+        margin: 4px 0;
+    }
+
+    .nav-menu ul {
+        gap: 20px;
+    }
+
+    .hero-section h1 {
+        font-size: 32px;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .newsletter-col {
+        grid-column: span 1;
+    }
+}
